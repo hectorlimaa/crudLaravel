@@ -14,11 +14,13 @@ class CreateAgendasTable extends Migration
     public function up()
     {
         Schema::create('agendas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->string('nome');
             $table->string('email');
             $table->string('telefone');
             $table->string('endereco');
+            $table->integer('id_users')->unsigned();
+            $table->foreign('id_users')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
