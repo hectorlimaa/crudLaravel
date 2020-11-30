@@ -1,5 +1,11 @@
-@include('layouts._includes.topo')
+
+    @include('layouts._includes.topo')
 
     @yield('content')
+
+    <br>
     
-@include('layouts._includes.footer')
+    <a class="waves-effect waves-light btn modal-trigger" href="#modalAdicionar">Adicionar</a>
+
+    @include('layouts._includes.footer')
+

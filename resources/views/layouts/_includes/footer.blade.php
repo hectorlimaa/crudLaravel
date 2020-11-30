@@ -3,6 +3,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.modal').modal();
 });</script>
-    </body>
-  </html>
+
+</body>
+</html>
+    
