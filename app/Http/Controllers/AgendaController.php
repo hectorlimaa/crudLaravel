@@ -10,6 +10,6 @@ class AgendaController extends Controller
 {
     public function index(){
 
-        return view('layouts.site');
+        return view('admin.index');
     }
 }
