@@ -1,6 +1,6 @@
 @extends("layouts.site") <!-- Aqui você chama o seu layout site -->
 
-@section("titulo", "Esreva o Título aqui") <!-- Já funciona!!! -->
+@section("titulo", "Escreva o Título aqui") <!-- Já funciona!!! -->
 
 @section("content")
 
