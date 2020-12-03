@@ -1,24 +1,26 @@
 <div class="input-field">
     <input type="text" name="nome"
-        value="">
+value="{{isset($registro->nome) ? $registro->nome: ''}}">
     <label>Nome</label>
 </div>
 
 <div class="input-field">
     <input type="text" name="email"
-        value="">
+        value="{{isset($registro->email) ? $registro->telefone: ''}}">
     <label>Email</label>
 </div>
 
 <div class="input-field">
     <input type="text" name="telefone"
-        value="">
+        value="{{isset($registro->telefone) ? $registro->telefone: ''}}">
     <label>Telefone</label>
 </div>
 
 <div class="input-field">
-    <input type="text" name="endereço"
-        value="">
+    <input type="text" name="endereco"
+        value="{{isset($registro->endereco) ? $registro->endereco: ''}}">
     <label>Endereço</label>
 </div>
+
+<input type="hidden" name="id_users" value="1">
 

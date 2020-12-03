@@ -15,7 +15,7 @@ Route::get('/',['as'=>'site.home', 'uses'=>'AgendaController@index']);
 
 Route::get('/contatos',['as'=>'site.agenda.contatos', 'uses'=>'AgendaController@lista']);
 
-Route::get('/contatos/adicionar',['as'=>'site.agenda.adicionar', 'uses'=>'AgendaController@adicionar']);
+Route::post('/contatos/adicionar',['as'=>'site.agenda.adicionar', 'uses'=>'AgendaController@adicionar']);
 Route::post('/contatos/salvar',['as'=>'site.agenda.salvar', 'uses'=>'AgendaController@salvar']);
 Route::get('/contatos/editar/',['as'=>'site.agenda.editar', 'uses'=>'AgendaController@editar']);
 Route::put('/contatos/atualizar',['as'=>'site.agenda.atualizar', 'uses'=>'AgendaController@atualizar']);
