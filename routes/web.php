@@ -17,7 +17,6 @@ Route::get('/contatos',['as'=>'site.agenda.contatos', 'uses'=>'AgendaController@
 
 Route::post('/contatos/adicionar',['as'=>'site.agenda.adicionar', 'uses'=>'AgendaController@adicionar']);
 Route::post('/contatos/salvar',['as'=>'site.agenda.salvar', 'uses'=>'AgendaController@salvar']);
-Route::get('/contatos/editar/',['as'=>'site.agenda.editar', 'uses'=>'AgendaController@editar']);
-Route::put('/contatos/atualizar',['as'=>'site.agenda.atualizar', 'uses'=>'AgendaController@atualizar']);
-Route::get('/contatos/deletar',['as'=>'site.agenda.deletar', 'uses'=>'AgendaController@deletar']);
+Route::put('/contatos/alterar',['as'=>'site.agenda.alterar', 'uses'=>'AgendaController@alterar']);
+Route::post('/contatos/deletar',['as'=>'site.agenda.deletar', 'uses'=>'AgendaController@deletar']);
 

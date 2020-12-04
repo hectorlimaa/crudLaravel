@@ -22,9 +22,27 @@ class AgendaController extends Controller
         Agenda::create($dados);
 
         return redirect()->route('site.home');
+    
+    }
 
-        
+    public function alterar(Request $req){
 
+        $dados = $req->all();
 
+        $id = $dados['id'];
+
+        Agenda::find($id)->update($dados);
+
+        return redirect()->route('site.home');
+
+    }
+
+    public function deletar(Request $req){
+
+        $id = $req['id'];
+
+        Agenda::find($id)->delete();
+
+        return redirect()->route('site.home');
     }
 }

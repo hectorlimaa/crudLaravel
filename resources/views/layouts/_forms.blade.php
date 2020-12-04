@@ -22,5 +22,7 @@ value="{{isset($registro->nome) ? $registro->nome: ''}}">
     <label>Endereço</label>
 </div>
 
+<input type="hidden" name='id' value="{{isset($registro->id) ? $registro->id: ''}}">
+
 <input type="hidden" name="id_users" value="1">
 
