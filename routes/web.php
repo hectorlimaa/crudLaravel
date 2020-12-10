@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/',['as'=>'site.home', 'uses'=>'AgendaController@index']);
+Route::get('/',['as'=>'site.home', 'uses'=>'HomeController@index']);
 
 Route::get('/contatos',['as'=>'site.agenda.contatos', 'uses'=>'AgendaController@lista']);
 

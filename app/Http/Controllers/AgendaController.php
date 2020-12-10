@@ -8,7 +8,7 @@ use App\Agenda;
 
 class AgendaController extends Controller
 {
-    public function index(){
+    public function lista(){
 
         $registros = Agenda::all();
 
